@@ -15,13 +15,29 @@
   html{scroll-behavior:smooth;}
   body{font-family:'Segoe UI',Arial,sans-serif;color:var(--text);background:var(--bg);}
   .layout{display:flex;min-height:100vh;}
-  .sidebar{width:280px;min-width:280px;background:var(--dark);position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;padding:40px 28px;border-right:1px solid rgba(255,255,255,0.05);}
-  .sb-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--green-mid),var(--green));display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff;font-weight:800;margin-bottom:20px;border:3px solid rgba(201,168,76,0.4);}
+  .sidebar{
+    width:280px;min-width:280px;background:var(--dark);
+    position:sticky;top:0;height:100vh;overflow-y:auto;
+    display:flex;flex-direction:column;padding:40px 28px;
+    border-right:1px solid rgba(255,255,255,0.05);
+  }
+  .sb-avatar{
+    width:80px;height:80px;border-radius:50%;
+    background:linear-gradient(135deg,var(--green-mid),var(--green));
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.8rem;color:#fff;font-weight:800;
+    margin-bottom:20px;border:3px solid rgba(201,168,76,0.4);
+  }
   .sb-name{color:#fff;font-size:1.05rem;font-weight:800;line-height:1.3;margin-bottom:4px;}
   .sb-title{color:#94a3b8;font-size:0.78rem;line-height:1.5;margin-bottom:24px;}
   .sb-divider{height:1px;background:rgba(255,255,255,0.08);margin:20px 0;}
   .sb-nav-label{color:#4a5568;font-size:0.68rem;text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:10px;}
-  .sb-nav a{display:flex;align-items:center;gap:10px;color:#94a3b8;text-decoration:none;font-size:0.85rem;padding:9px 12px;border-radius:7px;margin-bottom:2px;transition:all 0.2s;font-weight:500;}
+  .sb-nav a{
+    display:flex;align-items:center;gap:10px;
+    color:#94a3b8;text-decoration:none;font-size:0.85rem;
+    padding:9px 12px;border-radius:7px;margin-bottom:2px;
+    transition:all 0.2s;font-weight:500;
+  }
   .sb-nav a:hover,.sb-nav a.active{background:rgba(46,139,87,0.2);color:#6ee09a;}
   .sb-nav a .nav-icon{font-size:0.9rem;width:18px;text-align:center;}
   .sb-cert-label{color:#4a5568;font-size:0.68rem;text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:10px;}
@@ -31,9 +47,21 @@
   .sb-contact a{display:block;color:#64748b;font-size:0.78rem;text-decoration:none;padding:4px 0;transition:color 0.2s;}
   .sb-contact a:hover{color:var(--gold);}
   .main{flex:1;overflow-x:hidden;}
-  .hero{background:linear-gradient(135deg,var(--green) 0%,var(--green-mid) 50%,#1e8449 100%);padding:60px 56px 52px;position:relative;overflow:hidden;}
-  .hero::after{content:'';position:absolute;right:-60px;top:-60px;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,0.04);}
-  .hero-tag{display:inline-block;background:rgba(201,168,76,0.25);border:1px solid rgba(201,168,76,0.5);color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:18px;}
+  .hero{
+    background:linear-gradient(135deg,var(--green) 0%,var(--green-mid) 50%,#1e8449 100%);
+    padding:60px 56px 52px;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:'';position:absolute;right:-60px;top:-60px;
+    width:340px;height:340px;border-radius:50%;
+    background:rgba(255,255,255,0.04);
+  }
+  .hero-tag{
+    display:inline-block;background:rgba(201,168,76,0.25);
+    border:1px solid rgba(201,168,76,0.5);color:var(--gold);
+    font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    padding:4px 14px;border-radius:20px;margin-bottom:18px;
+  }
   .hero h1{color:#fff;font-size:2.4rem;font-weight:900;line-height:1.15;margin-bottom:10px;}
   .hero h1 span{color:#a8e6c1;}
   .hero-sub{color:rgba(255,255,255,0.75);font-size:1rem;margin-bottom:28px;line-height:1.7;max-width:580px;}
@@ -49,38 +77,74 @@
   .about-cols{display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:start;}
   .about-text p{font-size:0.96rem;color:var(--text);line-height:1.85;margin-bottom:14px;}
   .vp-strip{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-  .vp-box{background:var(--green-light);border:1px solid #c3e6cf;border-radius:10px;padding:18px;border-top:3px solid var(--green-mid);}
+  .vp-box{
+    background:var(--green-light);border:1px solid #c3e6cf;
+    border-radius:10px;padding:18px;border-top:3px solid var(--green-mid);
+  }
   .vp-box .ico{font-size:1.4rem;margin-bottom:8px;}
   .vp-box h4{font-size:0.85rem;color:var(--green);font-weight:800;margin-bottom:6px;}
   .vp-box p{font-size:0.82rem;color:#3d6b52;line-height:1.65;}
   .skills-panel{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:24px;}
   .panel-title{font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--muted);font-weight:700;margin-bottom:12px;}
-  .skill-tag{display:inline-block;background:#fff;border:1px solid var(--border);color:var(--text);font-size:0.77rem;font-weight:600;padding:4px 11px;border-radius:8px;margin:3px 3px 3px 0;}
+  .skill-tag{
+    display:inline-block;background:#fff;border:1px solid var(--border);
+    color:var(--text);font-size:0.77rem;font-weight:600;
+    padding:4px 11px;border-radius:8px;margin:3px 3px 3px 0;
+  }
   .cert-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:9px;padding-bottom:9px;border-bottom:1px solid var(--border);}
   .cert-row:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
   .cert-badge{background:var(--gold-light);border:1px solid #e8d5a0;color:#7d5f0a;font-size:0.68rem;font-weight:800;padding:2px 7px;border-radius:4px;white-space:nowrap;margin-top:1px;}
   .cert-text{font-size:0.82rem;color:var(--text);line-height:1.4;}
   .exp-wrap{position:relative;padding-left:28px;}
   .exp-wrap::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:var(--border);}
-  .exp-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px 32px;margin-bottom:24px;position:relative;box-shadow:0 1px 6px rgba(0,0,0,0.06);}
-  .exp-card::before{content:'';position:absolute;left:-35px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--green-mid);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--green-mid);}
+  .exp-card{
+    background:var(--white);border:1px solid var(--border);border-radius:12px;
+    padding:28px 32px;margin-bottom:24px;position:relative;
+    box-shadow:0 1px 6px rgba(0,0,0,0.06);
+  }
+  .exp-card::before{
+    content:'';position:absolute;left:-35px;top:28px;
+    width:14px;height:14px;border-radius:50%;
+    background:var(--green-mid);border:3px solid var(--bg);
+    box-shadow:0 0 0 2px var(--green-mid);
+  }
   .exp-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:4px;}
   .exp-co{font-size:1.1rem;color:var(--dark);font-weight:800;}
   .exp-date{background:var(--green-light);color:var(--green);font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:20px;border:1px solid #c3e6cf;white-space:nowrap;}
   .exp-role{font-size:0.88rem;color:var(--green-mid);font-weight:700;margin-bottom:12px;}
-  .exp-context-box{background:var(--gold-light);border-left:3px solid var(--gold);padding:11px 16px;border-radius:0 8px 8px 0;font-size:0.85rem;color:#5a4a1a;line-height:1.7;margin-bottom:16px;}
+  .exp-context-box{
+    background:var(--gold-light);border-left:3px solid var(--gold);
+    padding:11px 16px;border-radius:0 8px 8px 0;
+    font-size:0.85rem;color:#5a4a1a;line-height:1.7;margin-bottom:16px;
+  }
   .exp-context-box strong{color:#7d5f0a;}
   .exp-card ul{padding-left:18px;}
   .exp-card ul li{font-size:0.9rem;color:var(--text);line-height:1.75;margin-bottom:7px;}
   .tech-row{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
   .t-chip{background:var(--bg);border:1px solid var(--border);color:var(--muted);font-size:0.74rem;font-weight:600;padding:3px 9px;border-radius:6px;}
-  .artifact-top{background:linear-gradient(135deg,var(--dark) 0%,#16213e 100%);border-radius:14px;padding:40px;margin-bottom:36px;position:relative;overflow:hidden;}
-  .artifact-top::before{content:'';position:absolute;bottom:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(46,139,87,0.12);}
-  .art-eyebrow{display:inline-block;background:rgba(201,168,76,0.2);border:1px solid rgba(201,168,76,0.4);color:var(--gold);font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:14px;}
+  .artifact-top{
+    background:linear-gradient(135deg,var(--dark) 0%,#16213e 100%);
+    border-radius:14px;padding:40px;margin-bottom:36px;position:relative;overflow:hidden;
+  }
+  .artifact-top::before{
+    content:'';position:absolute;bottom:-40px;right:-40px;
+    width:200px;height:200px;border-radius:50%;
+    background:rgba(46,139,87,0.12);
+  }
+  .art-eyebrow{
+    display:inline-block;background:rgba(201,168,76,0.2);
+    border:1px solid rgba(201,168,76,0.4);color:var(--gold);
+    font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    padding:4px 14px;border-radius:20px;margin-bottom:14px;
+  }
   .artifact-top h3{color:#fff;font-size:1.5rem;font-weight:900;margin-bottom:10px;line-height:1.3;}
   .artifact-top p{color:#94a3b8;font-size:0.93rem;line-height:1.75;max-width:600px;}
   .art-block{margin-bottom:32px;}
-  .art-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--green-mid);font-weight:700;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+  .art-label{
+    font-size:0.7rem;text-transform:uppercase;letter-spacing:2.5px;
+    color:var(--green-mid);font-weight:700;margin-bottom:10px;
+    padding-bottom:8px;border-bottom:1px solid var(--border);
+  }
   .art-block p{font-size:0.94rem;color:var(--text);line-height:1.8;}
   .art-block p+p{margin-top:12px;}
   .art-block ul{padding-left:20px;margin-top:8px;}
@@ -95,12 +159,18 @@
   .tl-fin{margin-top:5px;font-size:0.84rem;color:var(--green);font-weight:600;}
   .steps{list-style:none;padding:0;counter-reset:s;}
   .steps li{counter-increment:s;display:flex;gap:16px;margin-bottom:18px;align-items:flex-start;}
-  .step-num{width:30px;height:30px;border-radius:50%;flex-shrink:0;background:var(--green-mid);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:800;}
+  .step-num{
+    width:30px;height:30px;border-radius:50%;flex-shrink:0;
+    background:var(--green-mid);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.8rem;font-weight:800;
+  }
   .step-text{font-size:0.93rem;color:var(--text);line-height:1.75;padding-top:4px;}
   .vp-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px;}
   .vp-pair-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:22px;}
   .vp-pair-card h5{font-size:0.88rem;color:var(--dark);font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
   .vp-pair-card p{font-size:0.88rem;color:var(--muted);line-height:1.75;}
+  /* ARTIFACT 2 CARDS */
   .a2-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px;}
   .a2-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:20px;}
   .a2-card strong{display:block;font-size:0.9rem;color:var(--dark);margin-bottom:6px;}
@@ -111,18 +181,33 @@
   .a2-stat-label{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:6px;line-height:1.5;}
   .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
   .a2-tag{background:var(--green-light);border:1px solid #c3e6cf;color:var(--green);font-size:0.78rem;font-weight:600;padding:4px 14px;border-radius:20px;}
-  .contact-bar{background:linear-gradient(135deg,var(--green),var(--green-mid));border-radius:14px;padding:36px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+  .contact-bar{
+    background:linear-gradient(135deg,var(--green),var(--green-mid));
+    border-radius:14px;padding:36px 40px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;
+  }
   .contact-bar h3{color:#fff;font-size:1.3rem;font-weight:800;margin-bottom:4px;}
   .contact-bar p{color:rgba(255,255,255,0.7);font-size:0.9rem;}
   .contact-links{display:flex;gap:12px;flex-wrap:wrap;}
-  .contact-btn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-size:0.87rem;font-weight:600;transition:all 0.2s;white-space:nowrap;}
+  .contact-btn{
+    background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);
+    color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;
+    font-size:0.87rem;font-weight:600;transition:all 0.2s;white-space:nowrap;
+  }
   .contact-btn:hover{background:rgba(255,255,255,0.22);}
   footer{background:var(--dark);color:#334155;text-align:center;padding:18px;font-size:0.8rem;}
-  @media(max-width:900px){.layout{flex-direction:column;}.sidebar{width:100%;height:auto;position:relative;flex-direction:row;flex-wrap:wrap;gap:16px;padding:24px;}.about-cols,.vp-strip,.vp-pair,.a2-grid,.a2-stat-grid{grid-template-columns:1fr;}.section{padding:48px 28px;}.hero{padding:40px 28px;}}
+  @media(max-width:900px){
+    .layout{flex-direction:column;}
+    .sidebar{width:100%;height:auto;position:relative;flex-direction:row;flex-wrap:wrap;gap:16px;padding:24px;}
+    .about-cols,.vp-strip,.vp-pair,.a2-grid,.a2-stat-grid{grid-template-columns:1fr;}
+    .section{padding:48px 28px;}
+    .hero{padding:40px 28px;}
+  }
 </style>
 </head>
 <body>
 <div class="layout">
+<!-- SIDEBAR -->
 <aside class="sidebar">
   <div class="sb-avatar">PK</div>
   <div class="sb-name">Praveen Kumar Akkapelly</div>
@@ -151,11 +236,15 @@
     <a href="https://github.com/praveenk-27" target="_blank">🐙 github.com/praveenk-27</a>
   </div>
 </aside>
+<!-- MAIN -->
 <div class="main">
+  <!-- HERO -->
   <div class="hero">
     <div class="hero-tag">Data Engineering · Cloud Platforms · AI/ML</div>
     <h1>Building Data Platforms<br><span>That Drive Financial Intelligence</span></h1>
-    <div class="hero-sub">6+ years designing enterprise lakehouse architectures, real-time pipelines, and governed data platforms across wealth management, insurance, and enterprise technology - certified across Databricks, AWS, Azure, and Snowflake.</div>
+    <div class="hero-sub">
+      6+ years designing enterprise lakehouse architectures, real-time pipelines, and governed data platforms across wealth management, insurance, and enterprise technology - certified across Databricks, AWS, Azure, and Snowflake.
+    </div>
     <div class="hero-stats">
       <div class="stat-box"><div class="stat-num">6+</div><div class="stat-label">Years Experience</div></div>
       <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Certifications</div></div>
@@ -164,6 +253,7 @@
     </div>
   </div>
 
+  <!-- ABOUT -->
   <div class="section section-alt" id="about">
     <div class="sec-eyebrow">Who I Am</div>
     <div class="sec-title">About <span>Me</span></div>
@@ -194,6 +284,8 @@
       </div>
     </div>
   </div>
+
+  <!-- EXPERIENCE -->
   <div class="section" id="experience">
     <div class="sec-eyebrow">Career</div>
     <div class="sec-title">Work <span>Experience</span></div>
@@ -203,60 +295,67 @@
         <div class="exp-role">Sr. Data Engineer &amp; Databricks Admin</div>
         <div class="exp-context-box"><strong>Business Context - Wealth Management:</strong> Kestra Financial Services is an independent wealth management platform that serves thousands of independent financial advisors across the US. The advisors are Kestra's direct clients - and those advisors in turn serve their own end clients (investors and households). Kestra's data platform team is responsible for managing all advisor and end-client data: portfolio holdings, investment activity, account performance, AUM metrics, and advisor-client relationship data. The platform delivers consolidated portfolio views, investment analytics, and AI-driven suggestions that help advisors make smarter recommendations for their clients - all within a regulated environment governed by SEC and FINRA requirements.</div>
         <ul>
-          <li>Designed and implemented a unified wealth management data lakehouse on Azure Databricks and Delta Lake, consolidating advisor profiles, client accounts, portfolio holdings, transaction history, and custodial data from multiple sources into a single governed platform.</li>
-          <li>Built end-to-end Azure Data Factory and Databricks pipelines ingesting 100GB+ of daily financial data with full schema validation, SLA checkpoints, and data quality checks before publishing to BI and analytics layers.</li>
-          <li>Engineered real-time streaming pipelines using Databricks Structured Streaming and Azure Event Hubs to process live trade confirmations, market data feeds, and account balance updates.</li>
-          <li>Developed Delta Live Tables (DLT) pipelines with data quality expectations to validate client portfolio valuations and ensure completeness and accuracy of AUM calculations.</li>
-          <li>Implemented Unity Catalog for centralized governance with automatic lineage tracking from raw custodial feeds through curated portfolio tables to Power BI reports, ensuring FINRA-compliant data access policies.</li>
-          <li>Designed Power BI dashboards for advisor KPIs, client portfolio summaries, AUM trends, investment performance benchmarks, and compliance reporting.</li>
-          <li>Collaborated with data scientists to prepare clean, feature-engineered datasets for predictive models generating AI-driven investment suggestions including client portfolio risk scoring and asset allocation recommendations.</li>
-          <li>Administered and optimized the Databricks workspace for 30+ engineering and analytics users: cluster lifecycle management, job scheduling, cost optimization, and workspace governance.</li>
-          <li>Integrated Snowflake data sharing to distribute aggregated advisor performance and portfolio analytics data to third-party wealth analytics vendors using Secure Data Sharing and Snowpipe.</li>
-          <li>Implemented CI/CD automation using Azure DevOps and Databricks CLI for zero-downtime deployments of PySpark notebooks, DLT pipelines, and job configurations.</li>
-          <li>Governed data lineage and access through Microsoft Purview enforcing RBAC policies, sensitive data classification, and audit trails to meet SEC, FINRA, and internal data governance standards.</li>
-          <li>Provisioned infrastructure as code using Terraform, automating setup of AKS clusters, ADF pipelines, and Databricks workspaces with RBAC tied to Azure AD groups.</li>
+          <li>Designed and implemented a unified wealth management data lakehouse on Azure Databricks and Delta Lake, consolidating advisor profiles, client accounts, portfolio holdings, transaction history, and custodial data from multiple sources into a single governed platform - the single source of truth for all advisor and client analytics.</li>
+          <li>Built end-to-end Azure Data Factory and Databricks pipelines ingesting 100GB+ of daily financial data - client portfolio positions, trade confirmations, account balances, fee schedules, and AUM data from custodians and third-party wealth platforms - with full schema validation, SLA checkpoints, and data quality checks before publishing to BI and analytics layers.</li>
+          <li>Engineered real-time streaming pipelines using Databricks Structured Streaming and Azure Event Hubs to process live trade confirmations, market data feeds, and account balance updates - enabling near-real-time portfolio views and performance dashboards for advisors.</li>
+          <li>Developed Delta Live Tables (DLT) pipelines with data quality expectations to validate client portfolio valuations, detect anomalies in account positions, and ensure completeness and accuracy of AUM calculations before delivering to advisor-facing dashboards.</li>
+          <li>Implemented Unity Catalog for centralized governance - role-based access control separating advisor data, client data, and compliance data - with automatic lineage tracking from raw custodial feeds through curated portfolio tables to Power BI reports, ensuring FINRA-compliant data access policies.</li>
+          <li>Designed Power BI dashboards for advisor KPIs, client portfolio summaries, AUM trends, investment performance benchmarks, and compliance reporting - giving advisors actionable visibility into client portfolios and their own book-of-business performance.</li>
+          <li>Collaborated with data scientists to prepare clean, feature-engineered datasets for predictive models that generate AI-driven investment suggestions - including client portfolio risk scoring, asset allocation recommendations, and next-best-action insights delivered to advisors through the wealth management platform.</li>
+          <li>Administered and optimized the Databricks workspace for 30+ engineering and analytics users: cluster lifecycle management, job scheduling, cost optimization, access provisioning, and workspace governance across dev, test, and production environments.</li>
+          <li>Integrated Snowflake data sharing to distribute aggregated advisor performance and portfolio analytics data to third-party wealth analytics vendors and compliance reporting partners using Secure Data Sharing and Snowpipe for near-real-time ingestion.</li>
+          <li>Implemented CI/CD automation using Azure DevOps and Databricks CLI for zero-downtime deployments of PySpark notebooks, DLT pipelines, and job configurations across all environments.</li>
+          <li>Governed data lineage and access through Microsoft Purview - enforcing RBAC policies, sensitive data classification, and audit trails across all advisor and client data assets to meet SEC, FINRA, and internal data governance standards.</li>
+          <li>Provisioned infrastructure as code using Terraform, automating setup of AKS clusters, ADF pipelines, and Databricks workspaces with RBAC tied to Azure AD groups and least-privilege access principles.</li>
         </ul>
-        <div class="tech-row"><span class="t-chip">Databricks</span><span class="t-chip">Delta Lake</span><span class="t-chip">Azure Data Factory</span><span class="t-chip">Unity Catalog</span><span class="t-chip">Spark Streaming</span><span class="t-chip">Azure Event Hubs</span><span class="t-chip">Snowflake</span><span class="t-chip">Azure Synapse</span><span class="t-chip">Power BI</span><span class="t-chip">dbt</span><span class="t-chip">Microsoft Purview</span><span class="t-chip">Azure DevOps</span><span class="t-chip">Terraform</span><span class="t-chip">PySpark</span><span class="t-chip">Azure ML</span></div>
+        <div class="tech-row">
+          <span class="t-chip">Databricks</span><span class="t-chip">Delta Lake</span><span class="t-chip">Azure Data Factory</span><span class="t-chip">Unity Catalog</span><span class="t-chip">Spark Streaming</span><span class="t-chip">Azure Event Hubs</span><span class="t-chip">Snowflake</span><span class="t-chip">Azure Synapse</span><span class="t-chip">Power BI</span><span class="t-chip">dbt</span><span class="t-chip">Microsoft Purview</span><span class="t-chip">Azure DevOps</span><span class="t-chip">Terraform</span><span class="t-chip">PySpark</span><span class="t-chip">Azure ML</span>
+        </div>
       </div>
       <div class="exp-card">
         <div class="exp-header"><div class="exp-co">MetLife</div><div class="exp-date">Aug 2022 – Sep 2024</div></div>
         <div class="exp-role">Azure Data Engineer</div>
-        <div class="exp-context-box"><strong>Business Context - Health Insurance:</strong> MetLife is one of the world's largest insurance and financial services companies. The data engineering team supported large-scale cloud migration of healthcare claims, member eligibility, provider, and policyholder data from on-premises systems - enabling faster claims processing, fraud detection, and member analytics on a modern cloud-native architecture under HIPAA compliance.</div>
+        <div class="exp-context-box"><strong>Business Context - Health Insurance:</strong> MetLife is one of the world's largest insurance and financial services companies offering group health insurance, life insurance, dental, and voluntary benefits to millions of policyholders through employer-sponsored plans. The data engineering team supported large-scale cloud migration of healthcare claims, member eligibility, provider, and policyholder data from on-premises systems - enabling faster claims processing, fraud detection, and member analytics on a modern cloud-native architecture under HIPAA compliance.</div>
         <ul>
-          <li>Designed and implemented Azure Data Factory pipelines to migrate on-premises health insurance and claims data into a cloud-based Delta Lake architecture on Databricks.</li>
-          <li>Built PySpark transformation jobs applying schema validation, type casting, null handling, dimension joins, and business rule enforcement on claims data.</li>
-          <li>Developed advanced SQL window functions to identify duplicate member claims, detect fraudulent billing patterns, and surface provider anomalies across health plan groups.</li>
-          <li>Integrated Fivetran and Informatica IICS connectors for low-latency data movement between on-prem SQL Server and cloud storage environments.</li>
-          <li>Implemented Delta Lake schema evolution and time travel features to handle upstream changes in claims data structure and enable rollback during production incidents.</li>
-          <li>Applied Unity Catalog to centralize metadata management, schema enforcement, and access control with automatic lineage tracking from raw claims ingestion through curated member and provider tables.</li>
-          <li>Modeled curated insurance data using dbt - building tested, version-controlled dimensional models for claims analytics and provider performance scorecards powering Power BI dashboards.</li>
-          <li>Migrated Azure Synapse tables to Delta Lake in Databricks and replaced legacy SSAS tabular models with scalable Synapse-based data models.</li>
-          <li>Automated pipeline monitoring by integrating Azure Logic Apps with Data Factory and Event Grid, triggering real-time alerts for pipeline failures or SLA breaches.</li>
-          <li>Governed PHI data lineage through Microsoft Purview, enforcing HIPAA-compliant RBAC policies and sensitive data classification across all Databricks workspaces.</li>
-          <li>Implemented CI/CD automation using Azure DevOps and Databricks CLI for consistent deployments of PySpark notebooks and Delta pipeline configurations.</li>
-          <li>Reworked complex T-SQL stored procedures into PL/pgSQL for SQL Server to PostgreSQL migration, reviewing thousands of procedures to ensure claims processing business logic remained intact.</li>
+          <li>Designed and implemented Azure Data Factory pipelines to migrate on-premises health insurance and claims data - including member eligibility, provider records, and claims transactions - into a cloud-based Delta Lake architecture on Databricks, validating table structures and row counts at each migration stage.</li>
+          <li>Built PySpark transformation jobs applying schema validation, type casting, null handling, dimension joins, and business rule enforcement on claims data before storing in Delta Lake for downstream analytics and reporting.</li>
+          <li>Developed advanced SQL window functions to identify duplicate member claims, detect fraudulent billing patterns, and surface provider anomalies across health plan groups - supporting the claims integrity and fraud prevention team.</li>
+          <li>Integrated Fivetran and Informatica IICS connectors for low-latency, reliable data movement between on-prem SQL Server (claims and eligibility systems) and cloud storage environments.</li>
+          <li>Implemented Delta Lake schema evolution and time travel features to handle upstream changes in claims data structure (new diagnosis codes, procedure updates) and enable rollback during production incidents.</li>
+          <li>Applied Unity Catalog to centralize metadata management, schema enforcement, and access control across dev, test, and prod - with automatic lineage tracking from raw claims ingestion through curated member and provider tables to BI dashboards.</li>
+          <li>Modeled curated insurance data using dbt - building tested, version-controlled dimensional models for claims analytics, member health trend reporting, and provider performance scorecards powering Power BI dashboards for the business.</li>
+          <li>Migrated Azure Synapse tables to Delta Lake in Databricks and replaced legacy SSAS tabular models with scalable, maintainable Synapse-based data models to support enterprise reporting.</li>
+          <li>Automated pipeline monitoring by integrating Azure Logic Apps with Data Factory and Event Grid, triggering real-time alerts to functional teams for pipeline failures or SLA breaches on time-sensitive claims processing workflows.</li>
+          <li>Governed PHI (Protected Health Information) data lineage through Microsoft Purview, enforcing HIPAA-compliant RBAC policies and sensitive data classification across all Databricks workspaces handling member and claims data.</li>
+          <li>Implemented CI/CD automation using Azure DevOps and Databricks CLI for consistent, tested deployments of PySpark notebooks and Delta pipeline configurations across all environments, reducing deployment errors and release cycle time.</li>
+          <li>Reworked complex T-SQL stored procedures into PL/pgSQL for SQL Server to PostgreSQL migration, reviewing and validating thousands of procedures to ensure claims processing business logic remained intact.</li>
         </ul>
-        <div class="tech-row"><span class="t-chip">Azure Data Factory</span><span class="t-chip">Databricks</span><span class="t-chip">Delta Lake</span><span class="t-chip">PySpark</span><span class="t-chip">dbt</span><span class="t-chip">Snowflake</span><span class="t-chip">Azure Synapse</span><span class="t-chip">Power BI</span><span class="t-chip">Azure Purview</span><span class="t-chip">Terraform</span><span class="t-chip">Azure DevOps</span><span class="t-chip">PostgreSQL</span><span class="t-chip">SQL Server</span></div>
+        <div class="tech-row">
+          <span class="t-chip">Azure Data Factory</span><span class="t-chip">Databricks</span><span class="t-chip">Delta Lake</span><span class="t-chip">PySpark</span><span class="t-chip">dbt</span><span class="t-chip">Snowflake</span><span class="t-chip">Azure Synapse</span><span class="t-chip">Power BI</span><span class="t-chip">Spark Streaming</span><span class="t-chip">Azure Purview</span><span class="t-chip">Terraform</span><span class="t-chip">Azure DevOps</span><span class="t-chip">PostgreSQL</span><span class="t-chip">SQL Server</span>
+        </div>
       </div>
       <div class="exp-card">
         <div class="exp-header"><div class="exp-co">Smart Squad Digital Solutions</div><div class="exp-date">Jul 2019 – Aug 2021</div></div>
         <div class="exp-role">Jr. Data Engineer</div>
         <div class="exp-context-box"><strong>Business Context - Enterprise Technology Services:</strong> Smart Squad Digital Solutions is a technology services company delivering data engineering and analytics solutions for enterprise clients in banking, retail, and media. The team built Hadoop-based big data platforms and migrated legacy database workloads to modern cloud and distributed architectures.</div>
         <ul>
-          <li>Developed production-ready Spark applications using RDDs, DataFrames, Spark SQL, and Spark Streaming APIs to process high-volume batch and real-time datasets.</li>
-          <li>Reviewed and validated over 3,000 stored procedures post-migration from SQL Server to PostgreSQL, ensuring business logic consistency across environments.</li>
-          <li>Built ETL frameworks using Sqoop, Pig, and Hive to ingest on-premises data into HDFS for downstream reporting and analytics workflows.</li>
-          <li>Developed real-time analytics pipelines using Scala, Apache Kafka, and Spark Streaming for event-driven data ingestion and processing.</li>
-          <li>Implemented observability and distributed tracing using OpenTelemetry, Prometheus, and Grafana, improving incident response times by 40%.</li>
+          <li>Developed production-ready Spark applications using RDDs, DataFrames, Spark SQL, and Spark Streaming APIs to process high-volume batch and real-time datasets for enterprise banking and retail clients.</li>
+          <li>Reviewed and validated over 3,000 stored procedures post-migration from SQL Server to PostgreSQL, ensuring business logic consistency and performance improvement across environments.</li>
+          <li>Built ETL frameworks using Sqoop, Pig, and Hive to ingest on-premises data into HDFS, making data available for downstream reporting, aggregation, and analytics workflows.</li>
+          <li>Developed real-time analytics pipelines using Scala, Apache Kafka, and Spark Streaming for event-driven data ingestion and processing across streaming data sources.</li>
+          <li>Implemented observability and distributed tracing using OpenTelemetry, Prometheus, and Grafana, improving incident response times by 40% and ensuring SLA compliance for real-time workloads.</li>
           <li>Ingested on-premises data to Azure cloud using self-hosted Integration Runtime into Blob Storage, supporting early-stage cloud migration for banking clients.</li>
-          <li>Applied MapReduce optimization techniques to improve performance of large-scale Hadoop batch jobs.</li>
-          <li>Managed source code versioning in Git and GitHub; published deployment guides and rollback procedures in Confluence.</li>
+          <li>Applied MapReduce optimization techniques - combiners, partitioning, and distributed cache - to improve performance of large-scale Hadoop batch jobs.</li>
+          <li>Managed source code versioning in Git and GitHub; published deployment guides and rollback procedures in Confluence, standardizing release management practices across project teams.</li>
         </ul>
-        <div class="tech-row"><span class="t-chip">Apache Spark</span><span class="t-chip">Hadoop</span><span class="t-chip">Hive</span><span class="t-chip">Kafka</span><span class="t-chip">Scala</span><span class="t-chip">Python</span><span class="t-chip">Sqoop</span><span class="t-chip">PostgreSQL</span><span class="t-chip">Azure Blob</span><span class="t-chip">Grafana</span><span class="t-chip">Git</span></div>
+        <div class="tech-row">
+          <span class="t-chip">Apache Spark</span><span class="t-chip">Hadoop</span><span class="t-chip">Hive</span><span class="t-chip">Kafka</span><span class="t-chip">Scala</span><span class="t-chip">Python</span><span class="t-chip">Sqoop</span><span class="t-chip">PostgreSQL</span><span class="t-chip">Azure Blob</span><span class="t-chip">SSIS</span><span class="t-chip">Grafana</span><span class="t-chip">Git</span>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- ARTIFACT 1 -->
   <div class="section section-alt" id="artifact1">
     <div class="sec-eyebrow">Featured Research</div>
     <div class="sec-title">AI &amp; ML in <span>Financial Services</span></div>
@@ -265,40 +364,78 @@
       <h3>From Turing to GPT: How AI/ML Evolved to Transform Wealth Management &amp; Insurance</h3>
       <p>A curated, practitioner-authored timeline tracing seven decades of AI and machine learning milestones - built through a financial services lens, connecting each era of innovation to real-world applications in wealth management, claims analytics, fraud detection, and advisor intelligence.</p>
     </div>
-    <div class="art-block"><div class="art-label">Title</div><p><strong>AI &amp; ML Evolution Timeline: A Financial Services Practitioner's Perspective</strong></p></div>
-    <div class="art-block"><div class="art-label">Introduction</div><p>As a data engineer building pipelines that power machine learning models across wealth management and health insurance, I work at the intersection of data infrastructure and AI every day. Understanding the technologies I deploy meant going deeper - tracing how artificial intelligence evolved from abstract theory into the production systems that now power portfolio analytics, claims fraud detection, client risk scoring, and AI-driven investment recommendations.</p><p>This timeline is a practitioner-authored research artifact mapping the major milestones in AI and ML history, specifically contextualized for financial services - for engineers, analysts, product managers, and technology leaders who want to understand not just what AI is, but where it came from and why it matters to their industry.</p></div>
-    <div class="art-block"><div class="art-label">Description</div><p>The timeline spans from 1950 to present across seven decades of AI and ML development. For each major milestone it captures the key breakthrough, why it mattered technically, and the direct connection to financial services applications in wealth management and insurance.</p></div>
+    <div class="art-block">
+      <div class="art-label">Title</div>
+      <p><strong>AI &amp; ML Evolution Timeline: A Financial Services Practitioner's Perspective</strong></p>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Introduction</div>
+      <p>As a data engineer building pipelines that power machine learning models across wealth management and health insurance, I work at the intersection of data infrastructure and AI every day. Understanding the technologies I deploy meant going deeper - tracing how artificial intelligence evolved from abstract theory into the production systems that now power portfolio analytics, claims fraud detection, client risk scoring, and AI-driven investment recommendations.</p>
+      <p>This timeline is a practitioner-authored research artifact mapping the major milestones in AI and ML history, specifically contextualized for financial services - for engineers, analysts, product managers, and technology leaders who want to understand not just what AI is, but where it came from and why it matters to their industry.</p>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Description</div>
+      <p>The timeline spans from 1950 to present across seven decades of AI and ML development. For each major milestone it captures the key breakthrough, why it mattered technically, and the direct connection to financial services applications in wealth management and insurance. The goal is a practical reference for financial professionals making technology decisions about AI adoption, vendor selection, and data platform investment.</p>
+    </div>
     <div class="art-block">
       <div class="art-label">The Timeline</div>
       <div class="tl">
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1950</div><div class="tl-name">The Turing Test - Defining Machine Intelligence</div><div class="tl-body">Alan Turing's paper "Computing Machinery and Intelligence" asked: can machines think? It established the philosophical and mathematical foundation for AI as a discipline.</div><div class="tl-fin">→ Finance: Algorithmic decision-making concepts begin seeding early quantitative risk modeling and actuarial theory.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1956</div><div class="tl-name">Dartmouth Conference - AI Is Born</div><div class="tl-body">John McCarthy coined "Artificial Intelligence." This landmark project formally established AI as a research discipline.</div><div class="tl-fin">→ Finance: Early rule-based logic would later form the backbone of credit scoring and insurance underwriting expert systems.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1956</div><div class="tl-name">Dartmouth Conference - AI Is Born</div><div class="tl-body">John McCarthy coined "Artificial Intelligence." This landmark project formally established AI as a research discipline and drew the first community around building thinking machines.</div><div class="tl-fin">→ Finance: Early rule-based logic would later form the backbone of credit scoring and insurance underwriting expert systems.</div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1969 – 1986</div><div class="tl-name">Expert Systems Rise - Then Two AI Winters</div><div class="tl-body">Rule-based expert systems like MYCIN demonstrated AI could assist domain experts. Overpromising led to two funding collapses as the limits of hard-coded rules became clear.</div><div class="tl-fin">→ Finance: Banks and insurers deployed early expert systems for loan approval and claims triage; winters slowed adoption but left rule-engine foundations still present in legacy systems today.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1986</div><div class="tl-name">Backpropagation - Neural Networks Learn</div><div class="tl-body">Rumelhart, Hinton, and Williams popularized backpropagation, enabling multilayer networks to learn from data by adjusting weights.</div><div class="tl-fin">→ Finance: Neural networks appeared in academic fraud detection research; early quant firms began experimenting with ML-based trading signals.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1997</div><div class="tl-name">IBM Deep Blue &amp; Statistical ML Gains Ground</div><div class="tl-body">Deep Blue defeated chess champion Garry Kasparov. SVMs and ensemble methods advanced practical ML for real-world problems with structured data.</div><div class="tl-fin">→ Finance: Quantitative hedge funds embedded statistical ML in trading; insurance actuaries began supplementing traditional models with ML-based risk scoring.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2006</div><div class="tl-name">Deep Learning Renaissance</div><div class="tl-body">Geoffrey Hinton's work on deep belief networks launched the modern deep learning era - making multi-layer training on real-world data feasible.</div><div class="tl-fin">→ Finance: Portfolio risk models, market prediction, and algorithmic trading strategies incorporated deep learning; health insurers began applying DL to claims pattern analysis.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2012</div><div class="tl-name">AlexNet &amp; the GPU Revolution</div><div class="tl-body">AlexNet won ImageNet by a large margin on GPUs, proving hardware-accelerated deep learning at scale.</div><div class="tl-fin">→ Finance: KYC document processing, insurance claims image analysis, and real-time fraud detection using computer vision accelerated across banking and insurance industries.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1986</div><div class="tl-name">Backpropagation - Neural Networks Learn</div><div class="tl-body">Rumelhart, Hinton, and Williams popularized backpropagation, enabling multilayer networks to learn from data by adjusting weights. This reignited machine learning as a viable AI path.</div><div class="tl-fin">→ Finance: Neural networks appeared in academic fraud detection research; early quant firms began experimenting with ML-based trading signals.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">1997</div><div class="tl-name">IBM Deep Blue &amp; Statistical ML Gains Ground</div><div class="tl-body">Deep Blue defeated chess champion Garry Kasparov. Simultaneously, SVMs and ensemble methods advanced practical ML for real-world problems with structured data.</div><div class="tl-fin">→ Finance: Quantitative hedge funds embedded statistical ML in trading; insurance actuaries began supplementing traditional models with ML-based risk scoring.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2006</div><div class="tl-name">Deep Learning Renaissance</div><div class="tl-body">Geoffrey Hinton's work on deep belief networks, combined with larger datasets and better compute, launched the modern deep learning era - making multi-layer training on real-world data feasible.</div><div class="tl-fin">→ Finance: Portfolio risk models, market prediction, and algorithmic trading strategies incorporated deep learning; health insurers began applying DL to claims pattern analysis.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2012</div><div class="tl-name">AlexNet &amp; the GPU Revolution</div><div class="tl-body">AlexNet won ImageNet by a large margin on GPUs, proving hardware-accelerated deep learning at scale. GPU computing became the default infrastructure for AI training.</div><div class="tl-fin">→ Finance: KYC document processing, insurance claims image analysis, and real-time fraud detection using computer vision accelerated across banking and insurance industries.</div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2017</div><div class="tl-name">Transformers - "Attention Is All You Need"</div><div class="tl-body">Google's landmark paper introduced the Transformer architecture with self-attention - the architectural breakthrough behind all modern large language models.</div><div class="tl-fin">→ Finance: Earnings call sentiment analysis, regulatory document parsing, AML alert summarization, and insurance policy document understanding using NLP became production-ready.</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2020 – 2023</div><div class="tl-name">Large Language Models Go Mainstream</div><div class="tl-body">GPT-3, GPT-4, and a wave of LLMs demonstrated human-level text generation and reasoning. Generative AI moved from research labs to commercial deployment.</div><div class="tl-fin">→ Finance: AI-powered advisor copilots, automated client portfolio commentary, investment recommendation engines, and conversational interfaces for wealth management platforms emerged at scale.</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2020 – 2023</div><div class="tl-name">Large Language Models Go Mainstream</div><div class="tl-body">GPT-3, GPT-4, and a wave of LLMs demonstrated human-level text generation and reasoning. Generative AI moved from research labs to commercial deployment across every industry.</div><div class="tl-fin">→ Finance: AI-powered advisor copilots, automated client portfolio commentary, investment recommendation engines, and conversational interfaces for wealth management platforms emerged at scale.</div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-era">2024 – Present</div><div class="tl-name">Responsible AI at Scale in Regulated Finance</div><div class="tl-body">The focus has shifted from "can we build AI" to "can we govern it." Firms embed explainability, audit trails, and compliance controls into AI deployed in production financial environments.</div><div class="tl-fin">→ Finance: Wealth platforms use AI for client churn prediction, advisor-level investment suggestions, AUM forecasting, and portfolio risk scoring - all governed through data platforms with SEC/FINRA-compliant lineage and access controls.</div></div>
       </div>
     </div>
-    <div class="art-block"><div class="art-label">Objective</div><p>To provide financial services professionals with a concise, practitioner-authored reference that connects the history of AI and ML to the tools and decisions they face today. This artifact demonstrates the ability to synthesize technical depth with business context, and to communicate complex concepts clearly across technical and non-technical audiences.</p></div>
+    <div class="art-block">
+      <div class="art-label">Objective</div>
+      <p>To provide financial services professionals - engineers, product managers, compliance officers, and technology leaders - with a concise, practitioner-authored reference that connects the history of AI and ML to the tools and decisions they face today. This artifact demonstrates the ability to synthesize technical depth with business context, and to communicate complex concepts clearly across technical and non-technical audiences.</p>
+    </div>
     <div class="art-block">
       <div class="art-label">Process</div>
       <ol class="steps">
         <li><div class="step-num">1</div><div class="step-text">Reviewed foundational AI/ML literature from Turing (1950) through modern transformer architectures (2017–present), identifying milestones with the highest impact on enterprise and financial applications.</div></li>
-        <li><div class="step-num">2</div><div class="step-text">Mapped each historical era to real-world financial services applications, drawing on direct experience building data platforms at Kestra Financial Services and MetLife.</div></li>
-        <li><div class="step-num">3</div><div class="step-text">Researched how AI/ML has specifically transformed wealth management and health insurance to make the timeline dual-purpose and practically useful.</div></li>
-        <li><div class="step-num">4</div><div class="step-text">Organized findings chronologically with a consistent structure: the technical breakthrough, its significance, and the financial services application.</div></li>
-        <li><div class="step-num">5</div><div class="step-text">Refined language to be accessible to non-ML audiences without sacrificing technical accuracy, reflecting cross-functional communication skills required when bridging data engineering, data science, and business stakeholder teams.</div></li>
+        <li><div class="step-num">2</div><div class="step-text">Mapped each historical era to real-world financial services applications, drawing on direct experience building data platforms at Kestra Financial Services (wealth management) and MetLife (health insurance).</div></li>
+        <li><div class="step-num">3</div><div class="step-text">Researched how AI/ML has specifically transformed wealth management - advisor tools, portfolio analytics, investment recommendations, AUM reporting - and health insurance - claims analytics, fraud detection, member risk scoring - to make the timeline dual-purpose and practically useful.</div></li>
+        <li><div class="step-num">4</div><div class="step-text">Organized findings chronologically with a consistent structure: the technical breakthrough, its significance, and the financial services application - ensuring relevance for both technical and business readers.</div></li>
+        <li><div class="step-num">5</div><div class="step-text">Refined language to be accessible to non-ML audiences without sacrificing technical accuracy, reflecting the cross-functional communication skills required when bridging data engineering, data science, and business stakeholder teams.</div></li>
       </ol>
     </div>
-    <div class="art-block"><div class="art-label">Tools &amp; Technologies Used</div><ul><li><strong>Primary Research:</strong> Academic papers - Turing (1950), McCarthy (1956), Rumelhart et al. (1986), LeCun et al. (2015), Vaswani et al. (2017)</li><li><strong>Industry Context:</strong> First-hand practitioner experience at Kestra Financial Services and MetLife</li><li><strong>GenAI Assistance:</strong> Used ChatGPT and Claude as research aids; all content verified and tailored from personal industry experience</li><li><strong>Presentation:</strong> HTML/CSS for a professional, publicly shareable portfolio artifact</li></ul></div>
-    <div class="art-block"><div class="art-label">Value Proposition</div><div class="vp-pair"><div class="vp-pair-card"><h5>🎯 Unique Value</h5><p>This is not a generic AI history overview. It is a practitioner-authored reference framed for wealth management and insurance professionals. Every milestone includes a direct financial services connection grounded in real production experience.</p></div><div class="vp-pair-card"><h5>📌 Relevance to the Industry</h5><p>Wealth management and insurance are undergoing rapid AI-driven transformation. Technology leaders and product teams need historical context to make confident decisions about AI adoption, platform investment, and vendor evaluation.</p></div></div></div>
-    <div class="art-block"><div class="art-label">References</div><ul><li>Turing, A. M. (1950). Computing machinery and intelligence. <em>Mind, 59</em>(236), 433–460.</li><li>McCarthy, J., Minsky, M., Rochester, N., &amp; Shannon, C. (1955). <em>A proposal for the Dartmouth summer research project on artificial intelligence.</em></li><li>Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J. (1986). Learning representations by back-propagating errors. <em>Nature, 323</em>, 533–536.</li><li>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature, 521</em>, 436–444.</li><li>Vaswani, A., et al. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems, 30.</em></li></ul></div>
+    <div class="art-block">
+      <div class="art-label">Tools &amp; Technologies Used</div>
+      <ul>
+        <li><strong>Primary Research:</strong> Academic papers - Turing (1950), McCarthy (1956), Rumelhart et al. (1986), LeCun et al. (2015), Vaswani et al. (2017)</li>
+        <li><strong>Industry Context:</strong> First-hand practitioner experience at Kestra Financial Services (wealth management data platform) and MetLife (healthcare claims data engineering)</li>
+        <li><strong>GenAI Assistance:</strong> Used ChatGPT and Claude as research aids to surface financial applications per era; all content verified and tailored from personal industry experience</li>
+        <li><strong>Presentation:</strong> HTML/CSS for a professional, publicly shareable portfolio artifact</li>
+      </ul>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Value Proposition</div>
+      <div class="vp-pair">
+        <div class="vp-pair-card"><h5>🎯 Unique Value</h5><p>This is not a generic AI history overview. It is a practitioner-authored reference framed for wealth management and insurance professionals. Every milestone includes a direct financial services connection grounded in real production experience - from building advisor portfolio platforms at Kestra to claims data pipelines at MetLife. That practitioner lens is what makes this resource distinctly useful.</p></div>
+        <div class="vp-pair-card"><h5>📌 Relevance to the Industry</h5><p>Wealth management and insurance are undergoing rapid AI-driven transformation. Technology leaders and product teams in these industries need historical context to make confident decisions about AI adoption, platform investment, and vendor evaluation. This timeline accelerates that understanding and serves as a reference tool for financial services teams at any stage of their AI journey.</p></div>
+      </div>
+    </div>
+    <div class="art-block">
+      <div class="art-label">References</div>
+      <ul>
+        <li>Turing, A. M. (1950). Computing machinery and intelligence. <em>Mind, 59</em>(236), 433–460.</li>
+        <li>McCarthy, J., Minsky, M., Rochester, N., &amp; Shannon, C. (1955). <em>A proposal for the Dartmouth summer research project on artificial intelligence.</em></li>
+        <li>Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J. (1986). Learning representations by back-propagating errors. <em>Nature, 323</em>, 533–536.</li>
+        <li>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature, 521</em>, 436–444.</li>
+        <li>Vaswani, A., et al. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems, 30.</em></li>
+        <li>Kearns, M., &amp; Nevmyvaka, Y. (2013). Machine learning for market microstructure and high frequency trading. In <em>High-Frequency Trading: New Realities for Traders, Markets, and Regulators.</em> Risk Books.</li>
+      </ul>
+    </div>
   </div>
 
+  <!-- ARTIFACT 2 -->
   <div class="section" id="artifact2">
     <div class="sec-eyebrow">AI &amp; ML Application Design</div>
     <div class="sec-title">Neurocollab AI — <span>Healthcare AI Platform</span></div>
@@ -307,8 +444,14 @@
       <h3>Neurocollab AI: Eliminating Administrative Friction in Healthcare Through Unified AI</h3>
       <p>A nine-slide investor pitch deck proposing a unified AI platform that reduces physician burnout by automating clinical documentation, patient communication, and diagnostic assistance — demonstrating applied ML system design across generative AI, computer vision, NLP, and ethical AI governance.</p>
     </div>
-    <div class="art-block"><div class="art-label">Title</div><p><strong>Neurocollab AI: Eliminating Administrative Friction in Healthcare Through Unified AI</strong></p></div>
-    <div class="art-block"><div class="art-label">Objective</div><p>Design a unified AI platform that reduces physician burnout by automating clinical documentation, patient communication, and diagnostic assistance — demonstrating applied ML system design across generative AI, computer vision, NLP, and ethical AI governance. Physicians currently spend up to 40% of their time on administrative tasks rather than direct patient care, resulting in 43.2% severe clinician burnout. Neurocollab AI addresses this by coordinating multiple AI techniques into a single clinical workflow platform.</p></div>
+    <div class="art-block">
+      <div class="art-label">Title</div>
+      <p><strong>Neurocollab AI: Eliminating Administrative Friction in Healthcare Through Unified AI</strong></p>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Objective</div>
+      <p>Design a unified AI platform that reduces physician burnout by automating clinical documentation, patient communication, and diagnostic assistance — demonstrating applied ML system design across generative AI, computer vision, NLP, and ethical AI governance. Physicians currently spend up to 40% of their time on administrative tasks rather than direct patient care, resulting in 43.2% severe clinician burnout. Neurocollab AI addresses this by coordinating multiple AI techniques into a single clinical workflow platform.</p>
+    </div>
     <div class="art-block">
       <div class="art-label">Process</div>
       <ol class="steps">
@@ -320,13 +463,55 @@
         <li><div class="step-num">6</div><div class="step-text">Revised the artifact for a portfolio audience by expanding the ethics and data sections beyond what an investor pitch typically includes, since technical viewers expect ML depth alongside business framing.</div></li>
       </ol>
     </div>
-    <div class="art-block"><div class="art-label">AI/ML Competencies Demonstrated</div><div class="a2-grid"><div class="a2-card"><strong>Generative AI</strong><p>Automated drafting of follow-up emails and personalized treatment plans directly from consultation audio — replacing hours of manual documentation.</p></div><div class="a2-card"><strong>Computer Vision (CNN)</strong><p>AI-assisted X-ray analysis surfacing early diagnostic markers during clinical review without requiring manual feature definition.</p></div><div class="a2-card"><strong>NLP &amp; Conversational AI</strong><p>Real-time multilingual voice translation and a 24/7 NLP-driven patient-facing chatbot handling off-hours medical queries.</p></div><div class="a2-card"><strong>ML Ethics &amp; Governance</strong><p>HIPAA compliance, continuous algorithmic bias auditing across patient demographics, and granular data sovereignty controls built into the system architecture.</p></div></div></div>
-    <div class="art-block"><div class="art-label">Data Requirements for Training</div><ul><li><strong>EHR &amp; Historical Charts:</strong> De-identified patient records to train generative models for accurate medical charting and personalized treatment plans</li><li><strong>Clinical Audio Data:</strong> Diverse, multilingual conversational data to train real-time voice translation and medical transcription algorithms</li><li><strong>Medical Imaging:</strong> Annotated X-rays and radiology reports to fine-tune the computer vision diagnostic assist models</li><li><strong>Clinical Guidelines:</strong> Standardized medical protocols and FAQs to constrain and govern the smart chatbot's responses within safe clinical boundaries</li></ul></div>
-    <div class="art-block"><div class="art-label">Quantified Social Impact</div><div class="a2-stat-grid"><div class="a2-stat"><div class="a2-stat-num">40%</div><div class="a2-stat-label">of physician time reclaimed (~3.2 hrs/day) through automated charting and documentation</div></div><div class="a2-stat"><div class="a2-stat-num">+30%</div><div class="a2-stat-label">increase in patient capacity — up to 6 additional patients per physician per day</div></div></div></div>
-    <div class="art-block"><div class="art-label">Tools &amp; Technologies</div><div class="tag-row"><span class="a2-tag">Generative AI</span><span class="a2-tag">Computer Vision (CNN)</span><span class="a2-tag">NLP / Transformers</span><span class="a2-tag">Voice Translation AI</span><span class="a2-tag">HIPAA Compliance</span><span class="a2-tag">Algorithmic Bias Auditing</span><span class="a2-tag">ML Ethics &amp; Governance</span><span class="a2-tag">Auto-Charting</span><span class="a2-tag">Decision Support AI</span></div></div>
-    <div class="art-block"><div class="art-label">Value Proposition</div><div class="vp-pair"><div class="vp-pair-card"><h5>🎯 Cross-Discipline AI Application</h5><p>This artifact demonstrates the ability to select and apply the right ML technique for each sub-problem — generative AI, computer vision, and NLP working as a coordinated system rather than defaulting to a single approach.</p></div><div class="vp-pair-card"><h5>⚖️ Ethics Built In, Not Added On</h5><p>Business value and ethical risk mitigation are designed together. HIPAA compliance, bias auditing, and data sovereignty are core architectural decisions reflecting the responsible AI thinking required in regulated environments.</p></div></div></div>
+    <div class="art-block">
+      <div class="art-label">AI/ML Competencies Demonstrated</div>
+      <div class="a2-grid">
+        <div class="a2-card"><strong>Generative AI</strong><p>Automated drafting of follow-up emails and personalized treatment plans directly from consultation audio — replacing hours of manual documentation.</p></div>
+        <div class="a2-card"><strong>Computer Vision (CNN)</strong><p>AI-assisted X-ray analysis surfacing early diagnostic markers during clinical review without requiring manual feature definition.</p></div>
+        <div class="a2-card"><strong>NLP &amp; Conversational AI</strong><p>Real-time multilingual voice translation and a 24/7 NLP-driven patient-facing chatbot handling off-hours medical queries.</p></div>
+        <div class="a2-card"><strong>ML Ethics &amp; Governance</strong><p>HIPAA compliance, continuous algorithmic bias auditing across patient demographics, and granular data sovereignty controls built into the system architecture.</p></div>
+      </div>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Data Requirements for Training</div>
+      <ul>
+        <li><strong>EHR &amp; Historical Charts:</strong> De-identified patient records to train generative models for accurate medical charting and personalized treatment plans</li>
+        <li><strong>Clinical Audio Data:</strong> Diverse, multilingual conversational data to train real-time voice translation and medical transcription algorithms</li>
+        <li><strong>Medical Imaging:</strong> Annotated X-rays and radiology reports to fine-tune the computer vision diagnostic assist models</li>
+        <li><strong>Clinical Guidelines:</strong> Standardized medical protocols and FAQs to constrain and govern the smart chatbot's responses within safe clinical boundaries</li>
+      </ul>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Quantified Social Impact</div>
+      <div class="a2-stat-grid">
+        <div class="a2-stat"><div class="a2-stat-num">40%</div><div class="a2-stat-label">of physician time reclaimed (~3.2 hrs/day) through automated charting and documentation</div></div>
+        <div class="a2-stat"><div class="a2-stat-num">+30%</div><div class="a2-stat-label">increase in patient capacity — up to 6 additional patients per physician per day</div></div>
+      </div>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Tools &amp; Technologies</div>
+      <div class="tag-row">
+        <span class="a2-tag">Generative AI</span>
+        <span class="a2-tag">Computer Vision (CNN)</span>
+        <span class="a2-tag">NLP / Transformers</span>
+        <span class="a2-tag">Voice Translation AI</span>
+        <span class="a2-tag">HIPAA Compliance</span>
+        <span class="a2-tag">Algorithmic Bias Auditing</span>
+        <span class="a2-tag">ML Ethics &amp; Governance</span>
+        <span class="a2-tag">Auto-Charting</span>
+        <span class="a2-tag">Decision Support AI</span>
+      </div>
+    </div>
+    <div class="art-block">
+      <div class="art-label">Value Proposition</div>
+      <div class="vp-pair">
+        <div class="vp-pair-card"><h5>🎯 Cross-Discipline AI Application</h5><p>This artifact demonstrates the ability to select and apply the right ML technique for each sub-problem — generative AI, computer vision, and NLP working as a coordinated system — rather than defaulting to a single approach for every clinical challenge.</p></div>
+        <div class="vp-pair-card"><h5>⚖️ Ethics Built In, Not Added On</h5><p>Business value and ethical risk mitigation are designed together. HIPAA compliance, bias auditing, and data sovereignty are core architectural decisions — reflecting the responsible AI thinking required in regulated healthcare and financial environments.</p></div>
+      </div>
+    </div>
   </div>
 
+  <!-- CONTACT -->
   <div class="section section-alt" id="contact">
     <div class="contact-bar">
       <div>
